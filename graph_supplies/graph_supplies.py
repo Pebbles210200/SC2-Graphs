@@ -58,7 +58,7 @@ def choose_button(title, choices):
 
 def select_replays():
     Tk().withdraw()
-    files = askopenfilenames(filetypes=[("Starcraft 2 Replay", "*.SC2Replay")])
+    files = askopenfilenames(filetypes=[("Starcraft 2 Replay", "*.SC2Replay")], title="Select Multiple SC2 Replays for Comparison")
     return files
 
 def search_for_player_named(replay, player_name):

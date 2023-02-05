@@ -105,7 +105,7 @@ def plot_worker_graph(supply_count_data, worker_count_data, time_stamps_data, le
     plt.legend()
     plt.show()
 
-def main(replay_files):
+def main():
     replay_files = select_replays()
 
     supply_count_data = []
@@ -143,5 +143,5 @@ def main(replay_files):
     plot_worker_graph(supply_count_data, worker_count_data, time_stamps_data, legend_titles)
 
 if __name__ == '__main__':
-    main(replay_files)
+    main()
 
